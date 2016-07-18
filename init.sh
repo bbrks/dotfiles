@@ -7,5 +7,14 @@ then
   exit 127
 fi
 
-echo 'Initialising dotfiles...'
+echo 'Updating submodules...'
+
+git submodule init
+git submodule update
+
+for f in */; do
+    srv=$(echo "$f" | sed 's/.$//') 
+    echo "Initialising $srv"
+    ./$srv.sh
+done;
 
