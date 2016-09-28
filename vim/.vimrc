@@ -4,7 +4,7 @@ syntax on
 filetype plugin indent on
 
 " Colour Schemes
-" let base16colorspace=256
+let base16colorspace=256
 colorscheme base16-ocean
 
 " UI
@@ -20,4 +20,3 @@ set expandtab
 
 " Mouse
 set mouse=a
-

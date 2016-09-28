@@ -1,4 +1,3 @@
 # dotfiles
 
-Clone into home directory and run `init.sh`
-
+Clone and run `init.sh`
