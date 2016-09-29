@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Download and install Homebrew if it doesn't exist
 brew --version >/dev/null 2>&1

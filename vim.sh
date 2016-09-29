@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 mkdir -p vim/.vim/autoload
 mkdir -p vim/.vim/bundle
