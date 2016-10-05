@@ -4,6 +4,7 @@
 
 # MacOS specific configurations
 if [[ "$OSTYPE" == "darwin"* ]]; then
+    echo "Running script: macOS"
     ./osx.sh
 fi
 
@@ -13,9 +14,11 @@ fi
 stow --version >/dev/null 2>&1
 if [ $? -gt 0 ]; then
     if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        echo "Installing: stow"
         sudo apt update
         sudo apt install stow
     elif [[ "$OSTYPE" == "darwin"* ]]; then
+        echo "Installing: stow"
         brew update
         brew install stow
     else
@@ -32,14 +35,13 @@ git submodule update
 
 
 
-# Iterate over directories, run a shell script of
-# the same name if it exists, then stow it
+# Iterate over directories, run init script, and then stow it
 for f in */; do
     dir=$(echo "$f" | sed 's/.$//')
-    if [[ -x "$dir.sh" ]]; then
-        echo "Running pre-stow script for $dir"
-        ./$dir.sh
+    if [[ -x "./$dir/init.sh" ]]; then
+        echo "Running script: $dir"
+        ./$dir/init.sh
     fi
-    echo "Running stow for $dir"
+    echo "Running stow: $dir:"
     stow $dir
 done;
