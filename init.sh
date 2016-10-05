@@ -32,8 +32,14 @@ git submodule update
 
 
 
+# Iterate over directories, run a shell script of
+# the same name if it exists, then stow it
 for f in */; do
-    srv=$(echo "$f" | sed 's/.$//')
-    echo "Initialising $srv"
-    ./$srv.sh
+    dir=$(echo "$f" | sed 's/.$//')
+    if [[ -x "$dir.sh" ]]; then
+        echo "Running pre-stow script for $dir"
+        ./$dir.sh
+    fi
+    echo "Running stow for $dir"
+    stow $dir
 done;
