@@ -41,6 +41,6 @@ for f in */; do
         echo "Running script: $dir"
         ./$dir/init.sh
     fi
-    echo "Running stow: $dir:"
+    echo "Running stow: $dir"
     stow $dir
 done;
