@@ -42,5 +42,5 @@ for f in */; do
         ./$dir/init.sh
     fi
     echo "Running stow: $dir"
-    stow $dir
+    stow --ignore='^init.sh$' $dir
 done;
