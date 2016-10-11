@@ -10,6 +10,10 @@ if [ -x ./.bash_private ]; then
         . ~/.bash_private
 fi
 
+if [ -x ./.bash-git-prompt/gitprompt.sh ]; then
+        . ~/.bash-git-prompt/gitprompt.sh
+fi
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
         . $(brew --prefix)/etc/bash_completion
 fi
