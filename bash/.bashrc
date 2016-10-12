@@ -1,3 +1,7 @@
+if [ -x ~/.bashrc.ubuntu ]; then
+    . ~/.bashrc.ubuntu
+fi
+
 if [ -x ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
