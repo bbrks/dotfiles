@@ -18,7 +18,7 @@ if [ -x ~/.bashrc.ubuntu ]; then
     . ~/.bashrc.ubuntu
 fi
 
-if [ -x ./.bash-git-prompt/gitprompt.sh ]; then
+if [ -x ~/.bash-git-prompt/gitprompt.sh ]; then
     . ~/.bash-git-prompt/gitprompt.sh
 fi
 
