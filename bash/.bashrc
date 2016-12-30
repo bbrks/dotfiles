@@ -28,14 +28,11 @@ elif [ -x $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
-# Start tmux by default in new shells
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
-
-export EDITOR=nano
+export EDITOR=vim
 
 # Set up Go environment
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+# Execute node binaries in projects
 export PATH=$PATH:.node_modules/bin
