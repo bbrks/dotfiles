@@ -1,7 +1,3 @@
-if [ -x ~/.bashrc.ubuntu ]; then
-    . ~/.bashrc.ubuntu
-fi
-
 if [ -x ~/.bash_e5 ]; then
     . ~/.bash_e5
 fi
@@ -16,6 +12,10 @@ fi
 
 if [ -x ./.bash_private ]; then
     . ~/.bash_private
+fi
+
+if [ -x ~/.bashrc.ubuntu ]; then
+    . ~/.bashrc.ubuntu
 fi
 
 if [ -x ./.bash-git-prompt/gitprompt.sh ]; then
