@@ -32,3 +32,5 @@ export PATH=$PATH:$GOPATH/bin
 
 # Execute node binaries in projects
 export PATH=$PATH:.node_modules/bin
+
+eval "$(jump shell bash)"
