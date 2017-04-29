@@ -1,7 +1,3 @@
-if [ -x ~/.bash_e5 ]; then
-    . ~/.bash_e5
-fi
-
 if [ -x ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
