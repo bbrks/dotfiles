@@ -7,3 +7,6 @@
 [submodule "bash-git-prompt/.bash-git-prompt"]
 	path = bash-git-prompt/.bash-git-prompt
 	url = git@github.com:magicmonty/bash-git-prompt.git
+[submodule "vim/.vim/bundle/gruvbox"]
+	path = vim/.vim/bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

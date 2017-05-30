@@ -4,8 +4,8 @@ syntax on
 filetype plugin indent on
 
 " Colour Schemes
-"let base16colorspace=256
-"colorscheme base16-ocean
+set termguicolors
+colorscheme gruvbox
 
 " UI
 set number
