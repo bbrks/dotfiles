@@ -14,6 +14,7 @@ if [ -x ~/.bashrc.ubuntu ]; then
     . ~/.bashrc.ubuntu
 fi
 
+GIT_PROMPT_THEME=Custom
 if [ -x ~/.bash-git-prompt/gitprompt.sh ]; then
     . ~/.bash-git-prompt/gitprompt.sh
 fi
@@ -27,10 +28,15 @@ fi
 export EDITOR=vim
 
 # Set up Go environment
-export GOPATH=$HOME/go
+export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 
 # Execute node binaries in projects
 export PATH=$PATH:.node_modules/bin
 
 eval "$(jump shell bash)"
+
+# Jump to symlink destination
+set -o physical
+
+archey

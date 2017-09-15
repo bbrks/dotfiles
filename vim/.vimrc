@@ -4,7 +4,7 @@ syntax on
 filetype plugin indent on
 
 " Colour Schemes
-set termguicolors
+"set termguicolors
 colorscheme gruvbox
 
 " UI
