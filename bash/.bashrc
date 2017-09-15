@@ -14,6 +14,7 @@ if [ -x ~/.bashrc.ubuntu ]; then
     . ~/.bashrc.ubuntu
 fi
 
+GIT_PROMPT_THEME=Custom
 if [ -x ~/.bash-git-prompt/gitprompt.sh ]; then
     . ~/.bash-git-prompt/gitprompt.sh
 fi
@@ -34,3 +35,5 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:.node_modules/bin
 
 eval "$(jump shell bash)"
+
+archey
