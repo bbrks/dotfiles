@@ -2,10 +2,15 @@
 
 
 
-# MacOS specific configurations
+# macOS specific configurations
 if [[ "$OSTYPE" == "darwin"* ]]; then
-    echo "Running script: macOS"
-    ./osx.sh
+    if [[ "$1" == "macOS" ]]; then
+        echo "Running script: macOS"
+        ./osx.sh
+    else
+        echo "WARNING: Not running macOS scripts. Run again with macOS as first argument."
+        sleep 10
+    fi
 fi
 
 

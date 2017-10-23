@@ -30,6 +30,7 @@ export EDITOR=vim
 # Set up Go environment
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
+mkdir -p $GOPATH
 
 # Execute node binaries in projects
 export PATH=$PATH:.node_modules/bin
