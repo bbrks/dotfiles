@@ -1,3 +1,7 @@
+if [ -d $(brew --prefix)/bin ]; then
+    export PATH=$(brew --prefix)/bin:$PATH
+fi
+
 if [ -x ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -21,19 +25,19 @@ fi
 
 if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
-elif [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+elif [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+    . $(brew --prefix)/share/bash-completion/bash_completion
 fi
 
 export EDITOR=vim
 
 # Set up Go environment
 export GOPATH=$HOME/dev/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$GOPATH/bin:$PATH
 mkdir -p $GOPATH
 
 # Execute node binaries in projects
-export PATH=$PATH:.node_modules/bin
+export PATH=.node_modules/bin:$PATH
 
 eval "$(jump shell bash)"
 
