@@ -19,9 +19,9 @@ if [ -x ~/.bash-git-prompt/gitprompt.sh ]; then
     . ~/.bash-git-prompt/gitprompt.sh
 fi
 
-if [ -x /usr/share/bash-completion/bash_completion ]; then
+if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
-elif [ -x $(brew --prefix)/etc/bash_completion ]; then
+elif [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
@@ -40,4 +40,4 @@ eval "$(jump shell bash)"
 # Jump to symlink destination
 set -o physical
 
-archey
+#archey

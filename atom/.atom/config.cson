@@ -1,0 +1,56 @@
+"*":
+  core:
+    disabledPackages: [
+      "linter"
+      "linter-ui-default"
+    ]
+    projectHome: "/Users/benbrooks/dev"
+    telemetryConsent: "no"
+    themes: [
+      "pristine-ui"
+      "gruvbox-plus-syntax"
+    ]
+    titleBar: "custom-inset"
+  editor:
+    fontFamily: "Go Mono"
+    fontSize: 10
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "af396c8e-06e0-47c0-b9b9-da098b8927a6"
+  "go-debug":
+    clearOutputOnStart: true
+    configurationFile: [
+      "~/.atom/go-debug.json"
+    ]
+    dlvPath: "/usr/local/bin/dlv"
+    panelInitialVisible: true
+  "go-plus":
+    panel:
+      displayMode: "closed"
+    test:
+      coverageHighlightMode: "covered-and-uncovered"
+  "linter-ui-default":
+    panelHeight: 300
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+  "pristine-ui":
+    fontSize: 10
+  "spell-check":
+    locales: [
+      "en-US"
+    ]
+  welcome:
+    showOnStartup: false
+".go.source":
+  editor:
+    tabLength: 4
+".gohtml.html.text":
+  editor:
+    tabLength: 4
+".gotemplate.source":
+  editor:
+    tabLength: 4
