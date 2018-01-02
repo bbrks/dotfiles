@@ -1,4 +1,7 @@
 "*":
+  "atom-ide-ui":
+    "atom-ide-diagnostics-ui":
+      autoVisibility: true
   core:
     disabledPackages: [
       "linter"
@@ -13,7 +16,7 @@
     titleBar: "custom-inset"
   editor:
     fontFamily: "Go Mono"
-    fontSize: 10
+    fontSize: 11
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
@@ -38,7 +41,7 @@
       "git-diff": true
       "git-diffDecorationsZIndex": 0
   "pristine-ui":
-    fontSize: 10
+    fontSize: 11
   "spell-check":
     locales: [
       "en-US"
