@@ -5,7 +5,7 @@ filetype plugin indent on
 
 " Colour Schemes
 "set termguicolors
-colorscheme gruvbox
+"colorscheme gruvbox
 
 " UI
 set number

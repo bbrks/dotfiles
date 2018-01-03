@@ -2,6 +2,7 @@
   "atom-ide-ui":
     "atom-ide-diagnostics-ui":
       autoVisibility: true
+    "atom-ide-outline-view": {}
   core:
     disabledPackages: [
       "linter"
@@ -34,6 +35,7 @@
       displayMode: "closed"
     test:
       coverageHighlightMode: "covered-and-uncovered"
+  "gruvbox-plus-syntax": {}
   "linter-ui-default":
     panelHeight: 300
   minimap:
@@ -48,6 +50,8 @@
     ]
   welcome:
     showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
 ".go.source":
   editor:
     tabLength: 4
