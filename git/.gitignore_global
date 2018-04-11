@@ -13,3 +13,6 @@ Thumbs.db
 
 # VSCode
 .vscode
+
+.ropeproject
+*.pyc
