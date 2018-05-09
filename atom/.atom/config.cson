@@ -31,7 +31,6 @@
       "~/.atom/go-debug.json"
     ]
     dlvPath: "/usr/local/bin/dlv"
-    panelInitialVisible: true
   "go-plus":
     panel:
       displayMode: "closed"
@@ -44,6 +43,8 @@
     plugins:
       "git-diff": true
       "git-diffDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
   "pristine-ui":
     fontSize: 11
   "spell-check":
