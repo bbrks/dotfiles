@@ -47,8 +47,8 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Increase keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 3
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
 
 # Disable iTunes media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
@@ -130,9 +130,10 @@ brew analytics off
 
 brew tap caskroom/cask
 brew tap caskroom/fonts
+brew tap caskroom/versions
 
 brew install archey git go htop jump stow vim
-brew cask install atom daisydisk dash docker flux iterm2 sizeup skype spotify spotify-notifications sublime-text texpad the-unarchiver tunnelblick vlc
+brew cask install atom daisydisk dash docker firefox-developer-edition flux iterm2 sizeup skype spotify spotify-notifications sublime-text texpad the-unarchiver tunnelblick vlc
 brew cask install font-go font-go-medium font-go-mono
 
 # iTerm Settings
