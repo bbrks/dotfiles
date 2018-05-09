@@ -15,6 +15,7 @@
       "gruvbox-plus-syntax"
     ]
     titleBar: "custom-inset"
+    useTreeSitterParsers: true
   editor:
     fontFamily: "Go Mono"
     fontSize: 11

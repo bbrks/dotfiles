@@ -133,7 +133,7 @@ brew tap caskroom/fonts
 brew tap caskroom/versions
 
 brew install archey git go htop jump stow vim
-brew cask install atom daisydisk dash docker firefox-developer-edition flux iterm2 sizeup skype spotify spotify-notifications sublime-text texpad the-unarchiver tunnelblick vlc
+brew cask install aerial atom daisydisk dash docker firefox-developer-edition flux iterm2 sizeup skype spotify spotify-notifications sublime-text texpad the-unarchiver tunnelblick vlc
 brew cask install font-go font-go-medium font-go-mono
 
 # iTerm Settings
