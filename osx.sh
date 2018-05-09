@@ -7,6 +7,9 @@ osascript -e 'tell application "System Preferences" to quit'
 sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Install command line tools
+xcode-select --install
+
 # Mute boot audio
 sudo nvram SystemAudioVolume=" "
 

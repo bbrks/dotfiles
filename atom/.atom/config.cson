@@ -24,6 +24,7 @@
     showInvisibles: true
   "exception-reporting":
     userId: "af396c8e-06e0-47c0-b9b9-da098b8927a6"
+  "file-icons": {}
   "go-debug":
     clearOutputOnStart: true
     configurationFile: [
