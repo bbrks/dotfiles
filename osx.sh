@@ -138,7 +138,7 @@ brew cask install font-go font-go-medium font-go-mono
 
 # iTerm Settings
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-open "iterm/gruvbox-dark.itermcolors"
+open "iterm/.iterm/gruvbox-dark.itermcolors"
 
 # SizeUp
 defaults write com.irradiatedsoftware.SizeUp StartAtLogin -bool true
