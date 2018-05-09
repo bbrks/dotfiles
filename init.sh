@@ -2,6 +2,12 @@
 
 
 
+# Abort on error
+set -e
+set -o pipefail
+
+
+
 # macOS specific configurations
 if [[ "$OSTYPE" == "darwin"* ]]; then
     if [[ "$1" == "macOS" ]]; then
@@ -9,7 +15,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         ./osx.sh
     else
         echo "WARNING: Not running macOS scripts. Run again with macOS as first argument."
-        sleep 10
+        sleep 5
     fi
 fi
 
