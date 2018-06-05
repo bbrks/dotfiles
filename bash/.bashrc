@@ -44,4 +44,10 @@ eval "$(jump shell bash)"
 # Jump to symlink destination
 set -o physical
 
-#archey
+export GPG_TTY=$(tty)
+
+# Prioritise Python 2
+export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
+
+# Couchbase
+export SG_COLOR=true
