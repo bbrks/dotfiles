@@ -1,12 +1,8 @@
 #!/bin/bash
 
-
-
 # Abort on error
 set -e
 set -o pipefail
-
-
 
 # macOS specific configurations
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -19,31 +15,24 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     fi
 fi
 
-
-
 # Check for GNU stow and attempt to install if it doesn't exist
-stow --version >/dev/null 2>&1
-if [ $? -gt 0 ]; then
-    if [[ "$OSTYPE" == "linux-gnu" ]]; then
-        echo "Installing: stow"
+if [[ ! -x $(command -v stow) ]]; then
+    if [[ -x $(command -v pacman) ]]; then
+        sudo pacman -Syu stow
+    elif [[ -x $(command -v apt) ]]; then
         sudo apt update
         sudo apt install stow
-    elif [[ "$OSTYPE" == "darwin"* ]]; then
-        echo "Installing: stow"
+    elif [[ -x $(command -v brew) ]]; then
         brew update
         brew install stow
     else
-        echo 'GNU Stow must be installed...'
+        echo "Can't automatically install GNU Stow..."
         exit 127
     fi
 fi
 
-
-
 git submodule init
 git submodule update
-
-
 
 # Iterate over directories, run init script, and then stow it
 for f in */; do
