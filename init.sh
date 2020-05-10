@@ -10,7 +10,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         echo "Running script: macOS"
         ./osx.sh
     else
-        echo "WARNING: Not running macOS scripts. Run again with macOS as first argument."
+        echo "Skipping macOS setup. Run again with macOS as first argument if desired."
         sleep 5
     fi
 fi
@@ -26,7 +26,7 @@ if [[ ! -x $(command -v stow) ]]; then
         brew update
         brew install stow
     else
-        echo "Can't automatically install GNU Stow..."
+        echo "Can't automatically install GNU Stow... (no pacman, apt, or brew)"
         exit 127
     fi
 fi

@@ -17,14 +17,11 @@ set -o physical
 # Set up Go environment
 export GOPATH=$HOME/dev/go
 mkdir -p $GOPATH
+export PATH=$GOPATH/bin:$PATH
 
 export GPG_TTY=$(tty)
 export SG_COLOR=true # Couchbase Sync Gateway colours by default
 export EDITOR=vim
-
-# Set PATHs
-export PATH=$GOPATH/bin:$PATH
-[[ -x $(command -v brew) ]] && [[ -d $(brew --prefix)/bin ]] && export PATH=$(brew --prefix)/bin:$PATH
 
 # Set shell hooks
 [[ -x $(command -v jump) ]] && eval "$(jump shell bash)"

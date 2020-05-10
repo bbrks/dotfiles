@@ -1,0 +1,5 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+[[ -x $(command -v brew) ]] && [[ -d $(brew --prefix)/bin ]] && export PATH=$(brew --prefix)/bin:$PATH
