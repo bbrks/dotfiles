@@ -1,9 +1,0 @@
-'body':
-    'ctrl-tab': 'pane:show-next-item'
-    'ctrl-tab ^ctrl': 'unset!'
-    'ctrl-shift-tab': 'pane:show-previous-item'
-    'ctrl-shift-tab ^ctrl': 'unset!'
-
-'.platform-darwin atom-text-editor[data-grammar~="go"]:not([mini])':
-  'cmd-down': 'golang:godef'
-  'cmd-up': 'golang:godef-return'
