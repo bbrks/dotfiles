@@ -36,11 +36,11 @@ git submodule update
 
 # Iterate over directories, run init script, and then stow it
 for f in */; do
-    dir=$(echo "$f" | sed 's/.$//')
+    dir="${f/\//}"
     if [[ -x "./$dir/init.sh" ]]; then
         echo "Running script: $dir"
-        ./$dir/init.sh
+        "./$dir/init.sh"
     fi
     echo "Running stow: $dir"
-    stow --ignore='^init.sh$' $dir
+    stow --ignore='^init.sh$' "$dir"
 done;
