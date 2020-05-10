@@ -27,6 +27,12 @@ export EDITOR=vim
 [[ -x $(command -v jump) ]] && eval "$(jump shell bash)"
 [[ -x $(command -v direnv) ]] && eval "$(direnv hook bash)"
 
-[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
-[[ -f ~/.bashrc.arch ]] && . ~/.bashrc.arch
-[[ -f ~/.bashrc.macos ]] && . ~/.bashrc.macos
+. ~/.bash_aliases
+
+# Platform specific rc files
+if [[ -f /etc/os-release ]]; then
+    . /etc/os-release
+    [[ $NAME == "Arch Linux" ]] && . ~/.bashrc.arch
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    . ~/.bashrc.macos
+fi
