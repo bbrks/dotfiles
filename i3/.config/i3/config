@@ -50,8 +50,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 ### i3 hotkeys
-bindsym $mod+Shift+c reload # reload config
-bindsym $mod+Shift+r restart # restart i3
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 bindsym $mod+Shift+space floating toggle
