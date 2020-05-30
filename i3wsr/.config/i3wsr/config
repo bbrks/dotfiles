@@ -9,6 +9,8 @@ Xfce4-terminal = ""
 "Steam" = ""
 "zoom" = ""
 "Zeal" = ""
+"Sublime_text" = ""
+"Code" = ""
 
 [aliases]
 "jetbrains-goland" = "GoLand"
@@ -17,6 +19,8 @@ Xfce4-terminal = ""
 "firefoxdeveloperedition" = "Firefox"
 "zoom" = "Zoom"
 "io.github.janbar.noson" = "Sonos"
+"Sublime_text" = "Sublime Text"
+"Code" = "VsCode"
 
 [general]
 separator = "  "
