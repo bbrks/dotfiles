@@ -1,0 +1,22 @@
+[icons]
+"Spotify" = "♪"
+"io.github.janbar.noson" = "♪"
+"jetbrains-goland" = ""
+firefoxdeveloperedition = ""
+Slack = ""
+Xfce4-terminal = ""
+"Prospect Mail" = ""
+"Steam" = ""
+"zoom" = ""
+"Zeal" = ""
+
+[aliases]
+"jetbrains-goland" = "GoLand"
+"Prospect Mail" = "Outlook"
+"Xfce4-terminal" = "Terminal"
+"firefoxdeveloperedition" = "Firefox"
+"zoom" = "Zoom"
+"io.github.janbar.noson" = "Sonos"
+
+[general]
+separator = "  "
