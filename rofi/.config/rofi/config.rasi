@@ -1,0 +1,16 @@
+configuration {
+	width: 25;
+	font: "Cozette 9";
+	show-icons: true;
+	icon-theme: "hicolor";
+	theme: "/usr/share/rofi/themes/gruvbox-dark.rasi";
+	terminal: "xfce4-terminal";
+	modi: "window,drun,ssh,combi,calc";
+	combi-modi: "window,drun,ssh";
+	sort: true;
+	sorting-method: "fzf";
+	matching: "fuzzy";
+	kb-clear-line: "Control+w";
+	kb-cancel: "Escape,Control+g,Control+bracketleft";
+}
+/* vim:ft=css
