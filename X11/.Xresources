@@ -2,6 +2,6 @@
 Xft.rgba:      rgb
 Xft.antialias: 1
 Xft.hinting:   1
-Xft.autohint:  1
+Xft.autohint:  0
 ! What degree of hinting to use (hintnone, hintslight, hintmedium, or hintfull)
 Xft.hintstyle: hintfull
