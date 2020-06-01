@@ -170,6 +170,8 @@ mode "resize" {
 bar {
 	status_command SCRIPT_DIR=/usr/lib/i3blocks i3blocks
 
+    tray_output none
+
 	position top
 	tray_padding 2
 	separator_symbol "|"
