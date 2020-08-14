@@ -126,6 +126,9 @@ focus_on_window_activation focus
 
 
 
+# Fix for zoom notification popup in floating mode
+#for_window [class="Zoom" title=""] floating enable
+
 ## Styling
 font pango:Cozette 8
 title_align center
@@ -171,7 +174,7 @@ mode "resize" {
 bar {
 	status_command SCRIPT_DIR=/usr/lib/i3blocks i3blocks
 
-    tray_output none
+#    tray_output none
 
 	position top
 	tray_padding 2
@@ -185,8 +188,8 @@ bar {
 
 		#                    border  backgr. text
 		focused_workspace    $aqua $aqua $darkgray
-		inactive_workspace   $darkgray $darkgray $fg
-		active_workspace     $darkgray $darkgray $fg
+		inactive_workspace   $bg $bg $fg
+		active_workspace     $bg $bg $fg
 		urgent_workspace     $red $red $bg
 	}
 }

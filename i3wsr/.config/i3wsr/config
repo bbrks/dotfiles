@@ -1,3 +1,7 @@
+[general]
+separator = " | "
+default_icon = "🔴"
+
 [icons]
 "Spotify" = "♪"
 "io.github.janbar.noson" = "♪"
@@ -21,6 +25,3 @@ Xfce4-terminal = ""
 "io.github.janbar.noson" = "Sonos"
 "Sublime_text" = "Sublime Text"
 "Code" = "VsCode"
-
-[general]
-separator = "  "

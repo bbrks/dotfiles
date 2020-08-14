@@ -26,7 +26,7 @@ export EDITOR=vim
 # Set shell hooks
 [[ -x $(command -v jump) ]] && eval "$(jump shell bash)"
 [[ -x $(command -v direnv) ]] && eval "$(direnv hook bash)"
-[[ -s /usr/share/nvm/nvm.sh ]] && source /usr/share/nvm/nvm.sh
+[[ -s /usr/share/nvm/init-nvm.sh ]] && . /usr/share/nvm/init-nvm.sh
 
 . ~/.bash_aliases
 

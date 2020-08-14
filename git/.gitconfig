@@ -24,3 +24,7 @@
 #    gpgsign = true
 #[gpg]
 #    program = /usr/local/bin/gpg
+[pull]
+	ff = only
+[rerere]
+	enabled = true
