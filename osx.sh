@@ -134,7 +134,7 @@ brew analytics off
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 
-brew install iterm2 htop stow jump nvim go git dash wireshark hex-fiend sublime-text vlc docker
+brew install iterm2 htop stow jump nvim go git dash hex-fiend sublime-text vlc docker
 brew install --cask wireshark
 brew install daisydisk scroll-reverser easy-move-plus-resize sizeup the-unarchiver
 brew install font-go font-go-medium font-go-mono font-cozette
