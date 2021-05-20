@@ -74,7 +74,7 @@ defaults write com.apple.finder FXPreferredViewStyle Clmv
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Wipe dock icons
-defaults write com.apple.dock persistent-apps -array
+#defaults write com.apple.dock persistent-apps -array
 
 # Shrink dock icon size
 defaults write com.apple.dock tilesize -int 64
@@ -134,12 +134,12 @@ brew analytics off
 brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 
-brew install iterm2 htop stow jump nvim go git dash hex-fiend sublime-text vlc docker
-brew install --cask wireshark
+brew install iterm2 htop stow jump nvim go git hex-fiend sublime-text vlc
+brew install --cask wireshark dash docker
 brew install daisydisk scroll-reverser easy-move-plus-resize sizeup the-unarchiver
-brew install font-go font-go-medium font-go-mono font-cozette
-brew install firefox-developer-edition spotify spotify-notifications texpad
-brew install android-studio goland vscode
+brew install font-go font-cozette
+brew install firefox-developer-edition spotify texpad
+brew install android-studio goland visual-studio-code
 
 # iTerm Settings
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
