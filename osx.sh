@@ -65,7 +65,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 5
 
 # Show all extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Column view by default
 defaults write com.apple.finder FXPreferredViewStyle Clmv
@@ -131,13 +131,15 @@ fi
 
 brew analytics off
 
-brew tap caskroom/cask
-brew tap caskroom/fonts
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-fonts
 
-brew install archey git go htop jump stow vim
-brew cask install aerial atom daisydisk dash docker firefox-developer-edition flux iterm2 sizeup skype spotify spotify-notifications sublime-text texpad the-unarchiver tunnelblick vlc
-brew cask install font-go font-go-medium font-go-mono
+brew install iterm2 htop stow jump nvim go git dash wireshark hex-fiend sublime-text vlc docker
+brew install --cask wireshark
+brew install daisydisk scroll-reverser easy-move-plus-resize sizeup the-unarchiver
+brew install font-go font-go-medium font-go-mono font-cozette
+brew install firefox-developer-edition spotify spotify-notifications texpad
+brew install android-studio goland vscode
 
 # iTerm Settings
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
