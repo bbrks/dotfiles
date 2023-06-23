@@ -1,10 +1,8 @@
 # dotfiles
 
-Clone and run `init.sh`
+Clone and run `init.sh`, follow the interactive instructions.
 
 ## Prerequisites
 
-- `bash`
-- `git`
-
-init.sh will try to automatically install `stow` via either: `pacman`, `brew`, or `apt`, depending on availability.
+- OS/Disto: `macOS` or `Arch`
+- Everything else the scripts should handle.
