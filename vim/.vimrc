@@ -1,7 +1,7 @@
 " Plugins
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+"execute pathogen#infect()
+"syntax on
+"filetype plugin indent on
 
 " Colour Schemes
 "set termguicolors

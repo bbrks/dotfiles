@@ -65,10 +65,16 @@ if [[ "$INSTALL_GAMING" == true ]]; then
     APPS_ADD+=("${APPS_GAMING[@]}")
 fi
 
-run_cmd $INSTALL_CMD ${APPS_ADD[@]}
+# if we have APPS_ADD, install them
+if [[ ${#APPS_ADD[@]} -gt 0 ]]; then
+    run_cmd $INSTALL_CMD ${APPS_ADD[@]}
+fi
 
-    # cask special case
-APPS_ADD_CASK=("${APPS_DEV_FORCE_CASK[@]}")
+# cask special case
+APPS_ADD_CASK=()
 if [[ "$INSTALL_DEV" == true ]]; then
+    APPS_ADD_CASK+=("${APPS_DEV_FORCE_CASK[@]}")
+fi
+if [[ ${#APPS_ADD_CASK[@]} -gt 0 ]]; then
     run_cmd brew install --cask ${APPS_ADD_CASK[@]}
 fi

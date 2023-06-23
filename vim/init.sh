@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p vim/.vim/autoload
-mkdir -p vim/.vim/bundle
+# mkdir -p vim/.vim/autoload
+# mkdir -p vim/.vim/bundle
 
-curl -LSso vim/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+# curl -LSso vim/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
