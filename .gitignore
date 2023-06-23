@@ -1,6 +1,0 @@
-# Downloaded by init script
-vim/.vim/autoload/pathogen.vim
-vim/.vim/.netrwhist
-
-# Atom dotfile directory contains a looot of shit... Want to ignore most of it.
-atom/.atom
